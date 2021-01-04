@@ -22,7 +22,7 @@ parser = argparse.ArgumentParser()
 # general -------------------------------------------------------------------------------
 parser.add_argument('--outdir','-o',           type=str,   nargs='+', default='./output/', 
 	                                           help='Output directory (default: ./output/')
-parser.add_argument('--name',                  type=str,   nargs='+', default='stim2D_',
+parser.add_argument('--name',                  type=str,   nargs='+', default=['stim2D_'],
                                                help='File Name (default: stim2D_')
 parser.add_argument('--parallel',              type=int,   nargs=1,   default=0, 
 	                                           help='Do Parallel Processing (default: 0)')
