@@ -56,7 +56,7 @@ def makeStimulus(img,FLAGS,idces,valueDict,centre,stim_shape,ctx,imgID):
 	tmp = np.frombuffer(img.get_data(),np.uint8)
 	tmp.shape = [FLAGS.canvas_size[0],FLAGS.canvas_size[1],4]
 	tmp = tmp[:,:,0:3]
-	img.write_to_png('img_' + FLAGS.name[0] + '.png')
+	img.write_to_png(FLAGS.outdir + 'img_' + FLAGS.name[0] + "_" + stim_shape + "_"+str(imgID)+"_" + '.png')
 	return ctx,tmp,img 
 
 
