@@ -71,3 +71,6 @@ The following parameters can be changed from the command line to customise the s
     --rng_trx                   range of translation along x
     --rng_try                   range of translation along y
     --rng_rota                  range of rotation transformation
+
+## Notes
+On Unix or MacOS, you should install **libcairo2** and **libcairo2-dev**.
